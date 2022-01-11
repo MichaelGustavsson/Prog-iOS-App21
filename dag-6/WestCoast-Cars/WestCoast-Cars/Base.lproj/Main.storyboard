@@ -67,6 +67,56 @@
                                     <outlet property="thumbnailImage" destination="V8A-QH-vjE" id="M8V-KD-7td"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="makeFancyCell" rowHeight="270" id="153-cF-lAE" customClass="MakeTableViewCell" customModule="WestCoast_Cars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="184.66666603088379" width="390" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="153-cF-lAE" id="Z3G-ng-Wje">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="270"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4xF-oH-rj6">
+                                            <rect key="frame" x="20" y="11" width="350" height="248"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7nQ-nj-bzm">
+                                                    <rect key="frame" x="75" y="0.0" width="200" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="LHy-uc-m2u"/>
+                                                        <constraint firstAttribute="height" constant="200" id="evR-tH-3aw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zjl-rn-rtT">
+                                                    <rect key="frame" x="69.000000000000014" y="220" width="212.33333333333337" height="28"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-Ae-Nfy">
+                                                            <rect key="frame" x="0.0" y="2.6666666666666572" width="86.666666666666671" height="23"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tillgängliga bilar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNT-EU-1Fy">
+                                                            <rect key="frame" x="106.66666666666666" y="5.6666666666666572" width="105.66666666666666" height="17"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="4xF-oH-rj6" secondAttribute="trailing" id="5Bc-2a-odM"/>
+                                        <constraint firstItem="4xF-oH-rj6" firstAttribute="leading" secondItem="Z3G-ng-Wje" secondAttribute="leadingMargin" id="GSb-cZ-mUv"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="4xF-oH-rj6" secondAttribute="bottom" id="Xo8-OD-Ni5"/>
+                                        <constraint firstItem="4xF-oH-rj6" firstAttribute="top" secondItem="Z3G-ng-Wje" secondAttribute="topMargin" id="dTt-Tm-ITy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="availabilityLabel" destination="cNT-EU-1Fy" id="4WY-lj-4F3"/>
+                                    <outlet property="makeNameLabel" destination="mR3-Ae-Nfy" id="g09-JN-KZj"/>
+                                    <outlet property="thumbnailImage" destination="7nQ-nj-bzm" id="7nz-eT-dbR"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="gDX-NO-cju" id="f6E-d9-hrS"/>

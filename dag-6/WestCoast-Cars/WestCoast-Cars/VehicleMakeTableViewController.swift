@@ -29,6 +29,7 @@ class VehicleMakeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "makeBaseCell"
+//        let cellIdentifier = "makeFancyCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MakeTableViewCell
         
         //Konfigurera vår prototyp cell...
