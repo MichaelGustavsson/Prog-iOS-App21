@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gDX-NO-cju">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xkj-kb-1fh">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -65,6 +65,7 @@
                                     <outlet property="availabilityLabel" destination="ued-9B-hy6" id="bm3-89-470"/>
                                     <outlet property="makeNameLabel" destination="Qzq-Fa-20a" id="Ylv-Q0-yaP"/>
                                     <outlet property="thumbnailImage" destination="V8A-QH-vjE" id="M8V-KD-7td"/>
+                                    <segue destination="2US-gi-hVz" kind="show" identifier="AvailableVehiclesForMake" id="tub-KQ-ITr"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="makeFancyCell" rowHeight="270" id="153-cF-lAE" customClass="MakeTableViewCell" customModule="WestCoast_Cars" customModuleProvider="target">
@@ -115,6 +116,7 @@
                                     <outlet property="availabilityLabel" destination="cNT-EU-1Fy" id="4WY-lj-4F3"/>
                                     <outlet property="makeNameLabel" destination="mR3-Ae-Nfy" id="g09-JN-KZj"/>
                                     <outlet property="thumbnailImage" destination="7nQ-nj-bzm" id="7nz-eT-dbR"/>
+                                    <segue destination="2US-gi-hVz" kind="show" identifier="AvailableVehiclesForMake" id="wyV-MQ-PYs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -123,10 +125,42 @@
                             <outlet property="delegate" destination="gDX-NO-cju" id="xfe-P9-dzf"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="AZc-Se-AEz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhc-wc-H8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1460" y="74"/>
+            <point key="canvasLocation" x="-530.76923076923072" y="73.93364928909952"/>
+        </scene>
+        <!--VehicleMakeDetailViewController-->
+        <scene sceneID="o4e-2k-bAf">
+            <objects>
+                <viewController title="VehicleMakeDetailViewController" id="2US-gi-hVz" customClass="VehicleMakeDetailsViewController" customModule="WestCoast_Cars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oIs-IK-eXB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bil Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQM-Xv-ZYL">
+                                <rect key="frame" x="144.66666666666666" y="238" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="126-Ve-e8X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uQM-Xv-ZYL" firstAttribute="centerX" secondItem="oIs-IK-eXB" secondAttribute="centerX" id="e9l-5M-pZ7"/>
+                            <constraint firstItem="uQM-Xv-ZYL" firstAttribute="top" secondItem="126-Ve-e8X" secondAttribute="top" constant="150" id="oYs-pa-PjQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wqd-th-n4p"/>
+                    <connections>
+                        <outlet property="makeNameLabel" destination="uQM-Xv-ZYL" id="FB4-8I-BKw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZX5-bg-Fpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374" y="74"/>
         </scene>
         <!--VehicleMakeController-->
         <scene sceneID="tne-QT-ifu">
@@ -209,9 +243,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-594" y="74"/>
+            <point key="canvasLocation" x="-1460" y="1005"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yKG-B5-1hW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xkj-kb-1fh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNJ-AA-ANC">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gDX-NO-cju" kind="relationship" relationship="rootViewController" id="2Lb-eQ-K9X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7D-xG-P7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1460" y="73.93364928909952"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="tub-KQ-ITr"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

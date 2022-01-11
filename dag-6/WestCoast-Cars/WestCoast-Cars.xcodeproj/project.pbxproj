@@ -15,6 +15,7 @@
 		EAD118E0278D738B0033E8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD118DE278D738B0033E8EA /* LaunchScreen.storyboard */; };
 		EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */; };
 		EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */; };
+		EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EAD118E1278D738B0033E8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTableViewCell.swift; sourceTree = "<group>"; };
 		EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeTableViewController.swift; sourceTree = "<group>"; };
+		EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				EAD118E1278D738B0033E8EA /* Info.plist */,
 				EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */,
 				EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */,
+				EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */,
 			);
 			path = "WestCoast-Cars";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				EAD118D4278D738A0033E8EA /* AppDelegate.swift in Sources */,
 				EAD118D6278D738A0033E8EA /* SceneDelegate.swift in Sources */,
 				EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */,
+				EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */,
 				EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
