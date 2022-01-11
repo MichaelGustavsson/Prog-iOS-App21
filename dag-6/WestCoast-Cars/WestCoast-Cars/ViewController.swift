@@ -19,11 +19,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //Konstruerar vår tabell cell(rad), anropas för varje element som finns i datat...
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "makeInfoCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         
-        cell.textLabel?.text = vehicles[indexPath.row]
-        cell.detailTextLabel?.text = "Antal i lager 3"
-        cell.imageView?.image = UIImage(named: logos[indexPath.row])
+        // Konvertera(downcast) till vår nya klass MakeTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MakeTableViewCell
+        
+        //Sätt värden på våra IBOutlet variabler...
+        cell.makeNameLabel.text = vehicles[indexPath.row]
+        cell.availabilityLabel.text = "Antal bilar i lager 3"
+        cell.thumbnailImage.image = UIImage(named: logos[indexPath.row])
+        
+//        cell.textLabel?.text = vehicles[indexPath.row]
+//        cell.detailTextLabel?.text = "Antal i lager 3"
+//        cell.imageView?.image = UIImage(named: logos[indexPath.row])
         
         return cell
     }
