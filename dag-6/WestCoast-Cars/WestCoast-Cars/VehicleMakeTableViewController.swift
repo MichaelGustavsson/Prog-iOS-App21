@@ -86,6 +86,49 @@ class VehicleMakeTableViewController: UITableViewController {
 //        return cell
 //    }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Skapa en dialog...
+        //Instantiera en instans av klassen UIAlertController...
+        let menu = UIAlertController(title: "Vårt första ActionSheet", message: "Vad vill du göra?", preferredStyle: .actionSheet)
+        //let menu = UIAlertController(title: nil, message: "Vad vill du göra?", preferredStyle: .alert)
+        
+        //Skapa en händelse/Action
+        let cancelAction = UIAlertAction(title: "Avbryt", style: .cancel, handler: nil)
+        
+        //Skapa en closure metod (Completion handler / handler:)...
+        let testActionHandler = {
+            (action: UIAlertAction) -> Void in // Här kommer koden som skall köras
+            
+            let message = UIAlertController(title: "Bekräfta", message: "Är du helt säker?", preferredStyle: .alert)
+            
+            message.addAction(UIAlertAction(title: "Ta bort", style: .destructive, handler: nil))
+            self.present(message, animated: true, completion: nil)
+        }
+        
+        let demoAction = UIAlertAction(title: "Ta bort", style: .destructive, handler: testActionHandler)
+        
+        // Skapa en möjlighet att sätta en viss tillverkare som favorite...
+        let favoriteAction = UIAlertAction(title: "Gör till favorit", style: .default, handler: {
+            (action: UIAlertAction!) -> Void in
+            
+            let cell = tableView.cellForRow(at: indexPath)
+            cell?.accessoryType = .checkmark
+            
+        })
+        
+        menu.addAction(demoAction)
+        menu.addAction(favoriteAction)
+        menu.addAction(cancelAction)
+        
+        //Presentera/visa dialogrutan.
+        present(menu, animated: true, completion: nil)
+        
+        //Avmarkera markerad rad...
+        tableView.deselectRow(at: indexPath, animated: false)
+    }
+    
+    
+    
     //Göm topp menyn
     override var prefersStatusBarHidden: Bool{
         return true
