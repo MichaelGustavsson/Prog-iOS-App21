@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gDX-NO-cju">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,6 +8,76 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--VehicleMakeTableViewController-->
+        <scene sceneID="xst-za-Xr7">
+            <objects>
+                <tableViewController title="VehicleMakeTableViewController" id="gDX-NO-cju" customClass="VehicleMakeTableViewController" customModule="WestCoast_Cars" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="2rr-pf-hDi">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="makeBaseCell" rowHeight="140" id="e1k-6P-xHY" customClass="MakeTableViewCell" customModule="WestCoast_Cars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e1k-6P-xHY" id="U67-p5-Nfw">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="140"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2ha-A5-ige">
+                                            <rect key="frame" x="20" y="11" width="350" height="118"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V8A-QH-vjE">
+                                                    <rect key="frame" x="0.0" y="9" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="lBn-Pn-6fB"/>
+                                                        <constraint firstAttribute="height" constant="100" id="rHW-On-wWq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="M26-r5-mwN">
+                                                    <rect key="frame" x="120" y="37" width="230" height="44"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzq-Fa-20a">
+                                                            <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="23"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillgängliga bilar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ued-9B-hy6">
+                                                            <rect key="frame" x="0.0" y="27" width="105.66666666666667" height="17"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2ha-A5-ige" firstAttribute="top" secondItem="U67-p5-Nfw" secondAttribute="topMargin" id="H1G-LD-E00"/>
+                                        <constraint firstItem="2ha-A5-ige" firstAttribute="leading" secondItem="U67-p5-Nfw" secondAttribute="leadingMargin" id="UUR-R9-Qom"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2ha-A5-ige" secondAttribute="trailing" id="YDm-vT-2Qd"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2ha-A5-ige" secondAttribute="bottom" id="pEV-qm-pEj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="availabilityLabel" destination="ued-9B-hy6" id="bm3-89-470"/>
+                                    <outlet property="makeNameLabel" destination="Qzq-Fa-20a" id="Ylv-Q0-yaP"/>
+                                    <outlet property="thumbnailImage" destination="V8A-QH-vjE" id="M8V-KD-7td"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gDX-NO-cju" id="f6E-d9-hrS"/>
+                            <outlet property="delegate" destination="gDX-NO-cju" id="xfe-P9-dzf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhc-wc-H8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1460" y="74"/>
+        </scene>
         <!--VehicleMakeController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -89,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92.307692307692307" y="79.620853080568722"/>
+            <point key="canvasLocation" x="-594" y="74"/>
         </scene>
     </scenes>
     <resources>
