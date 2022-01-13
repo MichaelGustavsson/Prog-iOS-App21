@@ -73,6 +73,47 @@ class VehicleMakeTableViewController: UITableViewController {
         }
     }
 
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Hämta vald tillverkare för markerad rad(cell)
+        guard let manufacturor = self.dataSource.itemIdentifier(for: indexPath) else {
+            return UISwipeActionsConfiguration()
+        }
+        
+        //Skapa en delete/ta bort händelse(Action)
+        let deleteAction = UIContextualAction(style: .destructive, title: "Ta Bort") {
+            //Skapa closure...
+            (action, sourceView, completionHandler) in
+            
+            var snapshot = self.dataSource.snapshot()
+            //Indikera borttagning av hittat objekt ur tabellen från vårt snapshot
+            snapshot.deleteItems([manufacturor])
+            
+            //Ta bort det på riktigt!
+            self.dataSource.apply(snapshot, animatingDifferences: true)
+            
+            // Stäng ner deleteAction...
+            completionHandler(true)
+        }
+        
+        //Skapa en delete/ta bort händelse(Action)
+        let anotherAction = UIContextualAction(style: .normal, title: "Extra") {
+            //Skapa closure...
+            (action, sourceView, completionHandler) in
+            
+            // Stäng ner anotherAction...
+            completionHandler(true)
+        }
+        
+        //deleteAction.backgroundColor = UIColor.systemMint
+        deleteAction.image = UIImage(systemName: "trash")
+        
+        anotherAction.backgroundColor = UIColor.systemBlue
+        anotherAction.image = UIImage(systemName: "heart")
+        
+        let swipeConfig = UISwipeActionsConfiguration(actions: [deleteAction, anotherAction])
+        
+        return swipeConfig
+    }
     //Göm topp menyn
     override var prefersStatusBarHidden: Bool{
         return true

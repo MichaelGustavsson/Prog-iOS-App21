@@ -12,5 +12,8 @@ enum Section{
 }
 
 class ManufacturorDiffableDataSource: UITableViewDiffableDataSource<Section, Manufacturor> {
-
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
 }
