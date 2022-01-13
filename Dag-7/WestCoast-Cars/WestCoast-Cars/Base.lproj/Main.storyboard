@@ -119,6 +119,69 @@
                                     <segue destination="2US-gi-hVz" kind="show" identifier="AvailableVehiclesForMake" id="wyV-MQ-PYs"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="makeNiceCell" rowHeight="270" id="Nqz-WX-Hwv" customClass="MakeTableViewCell" customModule="WestCoast_Cars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="454.66666603088379" width="390" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nqz-WX-Hwv" id="u8K-dw-ely">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="270"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Westcoast" translatesAutoresizingMaskIntoConstraints="NO" id="Osd-vv-zfT" userLabel="Background Image">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="270"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="270" id="YN7-mh-3ee"/>
+                                                <constraint firstAttribute="width" constant="390" id="hTi-W8-L3W"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="GTo-BB-gBJ" userLabel="Root Stack View">
+                                            <rect key="frame" x="0.0" y="10" width="390" height="260"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwN-xG-sVm" userLabel="Logo Image">
+                                                    <rect key="frame" x="120" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="Dms-Ku-Fjf"/>
+                                                        <constraint firstAttribute="height" constant="150" id="I2X-lU-x9M"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="P8g-jy-cZD" userLabel="Labels Stack View">
+                                                    <rect key="frame" x="74.000000000000014" y="235" width="242.33333333333337" height="25"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-sy-LQa">
+                                                            <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="23"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillgängliga bilar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j1T-W2-vYv">
+                                                            <rect key="frame" x="136.66666666666666" y="3" width="105.66666666666666" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Osd-vv-zfT" secondAttribute="bottom" id="E63-Nr-fvt"/>
+                                        <constraint firstItem="GTo-BB-gBJ" firstAttribute="top" secondItem="u8K-dw-ely" secondAttribute="top" constant="10" id="Ptn-Jd-Kzp"/>
+                                        <constraint firstItem="Osd-vv-zfT" firstAttribute="leading" secondItem="u8K-dw-ely" secondAttribute="leading" id="YRQ-Pl-hfd"/>
+                                        <constraint firstAttribute="bottom" secondItem="GTo-BB-gBJ" secondAttribute="bottom" id="bbI-c0-dkr"/>
+                                        <constraint firstAttribute="trailing" secondItem="Osd-vv-zfT" secondAttribute="trailing" id="ky8-wh-tcO"/>
+                                        <constraint firstItem="GTo-BB-gBJ" firstAttribute="leading" secondItem="u8K-dw-ely" secondAttribute="leading" id="oqJ-gM-faA"/>
+                                        <constraint firstAttribute="trailing" secondItem="GTo-BB-gBJ" secondAttribute="trailing" id="sec-qp-feG"/>
+                                        <constraint firstItem="Osd-vv-zfT" firstAttribute="top" secondItem="u8K-dw-ely" secondAttribute="top" id="w5o-yx-rOe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="availabilityLabel" destination="j1T-W2-vYv" id="mWR-33-N3l"/>
+                                    <outlet property="makeNameLabel" destination="bMs-sy-LQa" id="ijU-HQ-Dst"/>
+                                    <outlet property="thumbnailImage" destination="WwN-xG-sVm" id="39T-cm-6a9"/>
+                                    <segue destination="2US-gi-hVz" kind="show" identifier="AvailableVehiclesForMake" id="PvN-TL-vLq"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="gDX-NO-cju" id="f6E-d9-hrS"/>
@@ -265,9 +328,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tub-KQ-ITr"/>
+        <segue reference="PvN-TL-vLq"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Westcoast" width="1280" height="720"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
