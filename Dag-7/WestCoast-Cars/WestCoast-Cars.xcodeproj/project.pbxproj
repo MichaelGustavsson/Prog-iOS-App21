@@ -17,6 +17,7 @@
 		EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */; };
 		EAE6F715279031E900EA3C8B /* VehicleManufacturorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */; };
 		EAE6F7172790362F00EA3C8B /* ManufacturorDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */; };
+		EAE6F71D2790617500EA3C8B /* MakeDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F71C2790617500EA3C8B /* MakeDetailHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeDetailsViewController.swift; sourceTree = "<group>"; };
 		EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleManufacturorModel.swift; sourceTree = "<group>"; };
 		EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorDiffableDataSource.swift; sourceTree = "<group>"; };
+		EAE6F71C2790617500EA3C8B /* MakeDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDetailHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +66,44 @@
 		EAD118D2278D738A0033E8EA /* WestCoast-Cars */ = {
 			isa = PBXGroup;
 			children = (
+				EAE6F71A279055A200EA3C8B /* Controllers */,
+				EAE6F7192790557000EA3C8B /* Views */,
+				EAE6F7182790556000EA3C8B /* Models */,
 				EAD118D3278D738A0033E8EA /* AppDelegate.swift */,
 				EAD118D5278D738A0033E8EA /* SceneDelegate.swift */,
 				EAD118D9278D738A0033E8EA /* Main.storyboard */,
 				EAD118DC278D738B0033E8EA /* Assets.xcassets */,
 				EAD118DE278D738B0033E8EA /* LaunchScreen.storyboard */,
 				EAD118E1278D738B0033E8EA /* Info.plist */,
-				EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */,
-				EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */,
-				EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */,
+			);
+			path = "WestCoast-Cars";
+			sourceTree = "<group>";
+		};
+		EAE6F7182790556000EA3C8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */,
 				EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */,
 			);
-			path = "WestCoast-Cars";
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EAE6F7192790557000EA3C8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */,
+				EAE6F71C2790617500EA3C8B /* MakeDetailHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAE6F71A279055A200EA3C8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */,
+				EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +179,7 @@
 			files = (
 				EAD118D4278D738A0033E8EA /* AppDelegate.swift in Sources */,
 				EAD118D6278D738A0033E8EA /* SceneDelegate.swift in Sources */,
+				EAE6F71D2790617500EA3C8B /* MakeDetailHeaderView.swift in Sources */,
 				EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */,
 				EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */,
 				EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */,

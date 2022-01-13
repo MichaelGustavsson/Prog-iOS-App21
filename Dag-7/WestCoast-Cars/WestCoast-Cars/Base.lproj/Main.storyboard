@@ -88,13 +88,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zjl-rn-rtT">
                                                     <rect key="frame" x="69.000000000000014" y="220" width="212.33333333333337" height="28"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-Ae-Nfy">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-Ae-Nfy">
                                                             <rect key="frame" x="0.0" y="2.6666666666666572" width="86.666666666666671" height="23"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tillgängliga bilar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNT-EU-1Fy">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tillgängliga bilar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNT-EU-1Fy">
                                                             <rect key="frame" x="106.66666666666666" y="5.6666666666666572" width="105.66666666666666" height="17"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <color key="textColor" systemColor="systemGrayColor"/>
@@ -188,11 +188,11 @@
                             <outlet property="delegate" destination="gDX-NO-cju" id="xfe-P9-dzf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AZc-Se-AEz"/>
+                    <navigationItem key="navigationItem" title="Westcoast Cars bilmärken" id="AZc-Se-AEz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhc-wc-H8j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-530.76923076923072" y="73.93364928909952"/>
+            <point key="canvasLocation" x="-538" y="74"/>
         </scene>
         <!--VehicleMakeDetailViewController-->
         <scene sceneID="o4e-2k-bAf">
@@ -202,45 +202,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="DSA-0g-Rpa">
-                                <rect key="frame" x="0.0" y="163" width="390" height="647"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-Ie-2I3" userLabel="Logo Image View">
-                                        <rect key="frame" x="145" y="0.0" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="FCI-qR-qy6"/>
-                                            <constraint firstAttribute="width" constant="100" id="Y5f-7y-hml"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bil Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQM-Xv-ZYL">
-                                        <rect key="frame" x="144.66666666666666" y="124.00000000000003" width="101" height="478.66666666666674"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Antal bilar i lager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1o5-sW-up7">
-                                        <rect key="frame" x="131.66666666666666" y="626.66666666666663" width="126.66666666666666" height="20.333333333333371"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wRB-oa-0IA">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="9BU-HS-JGL" userLabel="Header View" customClass="MakeDetailHeaderView" customModule="WestCoast_Cars" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Westcoast" translatesAutoresizingMaskIntoConstraints="NO" id="U7a-UY-LcX" userLabel="Header Image View">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Iz-JK-lIR" userLabel="Overlay">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                                            <color key="backgroundColor" white="1" alpha="0.29906299446202533" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="JG9-sp-RBa" userLabel="Root Header Stack View">
+                                            <rect key="frame" x="8" y="30" width="374" height="270"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="td8-fO-XqV" userLabel="Logo Image View">
+                                                    <rect key="frame" x="124.66666666666666" y="0.0" width="125" height="125"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="125" id="DPD-uS-y1v"/>
+                                                        <constraint firstAttribute="width" constant="125" id="oJs-Mr-b9C"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="117" translatesAutoresizingMaskIntoConstraints="NO" id="4pq-zI-wWO" userLabel="Label Stack View">
+                                                    <rect key="frame" x="17" y="214" width="340.33333333333331" height="56"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tillverkare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THX-Bu-cCf">
+                                                            <rect key="frame" x="0.0" y="13" width="109.66666666666667" height="30"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Antal bilar i lager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0P-4n-bSw">
+                                                            <rect key="frame" x="226.66666666666666" y="19.666666666666686" width="113.66666666666666" height="17"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="U7a-UY-LcX" secondAttribute="bottom" id="2S4-eR-Zat"/>
+                                        <constraint firstAttribute="trailing" secondItem="JG9-sp-RBa" secondAttribute="trailing" constant="8" id="4Wc-0J-mG5"/>
+                                        <constraint firstItem="9Iz-JK-lIR" firstAttribute="top" secondItem="9BU-HS-JGL" secondAttribute="top" id="9wm-ho-kI6"/>
+                                        <constraint firstItem="9Iz-JK-lIR" firstAttribute="leading" secondItem="9BU-HS-JGL" secondAttribute="leading" id="CSZ-db-nej"/>
+                                        <constraint firstItem="JG9-sp-RBa" firstAttribute="leading" secondItem="9BU-HS-JGL" secondAttribute="leading" constant="8" id="CZ0-5e-ude"/>
+                                        <constraint firstAttribute="bottom" secondItem="9Iz-JK-lIR" secondAttribute="bottom" id="DkF-l7-aKz"/>
+                                        <constraint firstItem="JG9-sp-RBa" firstAttribute="top" secondItem="9BU-HS-JGL" secondAttribute="top" constant="30" id="QcR-mF-fQS"/>
+                                        <constraint firstItem="U7a-UY-LcX" firstAttribute="leading" secondItem="9BU-HS-JGL" secondAttribute="leading" id="jke-eM-23d"/>
+                                        <constraint firstItem="U7a-UY-LcX" firstAttribute="top" secondItem="9BU-HS-JGL" secondAttribute="top" id="r0g-Cx-L0O"/>
+                                        <constraint firstAttribute="trailing" secondItem="9Iz-JK-lIR" secondAttribute="trailing" id="u7e-0G-Zvq"/>
+                                        <constraint firstAttribute="trailing" secondItem="U7a-UY-LcX" secondAttribute="trailing" id="xQa-Bc-Kiz"/>
+                                        <constraint firstAttribute="bottom" secondItem="JG9-sp-RBa" secondAttribute="bottom" id="zvk-zK-dpw"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="logoImage" destination="td8-fO-XqV" id="Dcm-CK-slx"/>
+                                        <outlet property="makeNameLabel" destination="THX-Bu-cCf" id="QN9-91-qRL"/>
+                                        <outlet property="vehiclesInStock" destination="m0P-4n-bSw" id="IoJ-F5-IhD"/>
+                                    </connections>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="hhA-2m-jRn">
+                                        <rect key="frame" x="0.0" y="344.66666603088379" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hhA-2m-jRn" id="9ak-rX-AMR">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="126-Ve-e8X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DSA-0g-Rpa" firstAttribute="leading" secondItem="126-Ve-e8X" secondAttribute="leading" id="Na5-Qp-HZN"/>
-                            <constraint firstItem="126-Ve-e8X" firstAttribute="bottom" secondItem="DSA-0g-Rpa" secondAttribute="bottom" id="NgO-cN-1wF"/>
-                            <constraint firstItem="DSA-0g-Rpa" firstAttribute="top" secondItem="126-Ve-e8X" secondAttribute="top" constant="75" id="TWG-p8-13D"/>
-                            <constraint firstItem="126-Ve-e8X" firstAttribute="trailing" secondItem="DSA-0g-Rpa" secondAttribute="trailing" id="ZZ5-j4-hQ0"/>
+                            <constraint firstItem="wRB-oa-0IA" firstAttribute="leading" secondItem="126-Ve-e8X" secondAttribute="leading" id="4fP-Y1-6NF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wRB-oa-0IA" secondAttribute="bottom" id="iXv-MM-sNj"/>
+                            <constraint firstItem="126-Ve-e8X" firstAttribute="trailing" secondItem="wRB-oa-0IA" secondAttribute="trailing" id="tvg-jE-XiX"/>
+                            <constraint firstItem="wRB-oa-0IA" firstAttribute="top" secondItem="oIs-IK-eXB" secondAttribute="topMargin" id="wuu-af-wxq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wqd-th-n4p"/>
                     <connections>
-                        <outlet property="logoImage" destination="Fb5-Ie-2I3" id="j3u-o7-bAV"/>
-                        <outlet property="makeNameLabel" destination="uQM-Xv-ZYL" id="FB4-8I-BKw"/>
-                        <outlet property="vehiclesInStock" destination="1o5-sW-up7" id="9Pb-EA-cY2"/>
+                        <outlet property="headerView" destination="9BU-HS-JGL" id="Uwg-4M-lwT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZX5-bg-Fpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -22,6 +22,8 @@ class VehicleMakeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.prefersLargeTitles = false
+        
         // Steg 3. Initiera vår tableViews dataSource att använda vår datakälla
         // Steg 3.1
         tableView.dataSource = dataSource //Anslutit vår datakälla till tableView
