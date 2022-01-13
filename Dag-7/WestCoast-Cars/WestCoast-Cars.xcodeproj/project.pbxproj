@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		EAD118D4278D738A0033E8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118D3278D738A0033E8EA /* AppDelegate.swift */; };
 		EAD118D6278D738A0033E8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118D5278D738A0033E8EA /* SceneDelegate.swift */; };
-		EAD118D8278D738A0033E8EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118D7278D738A0033E8EA /* ViewController.swift */; };
 		EAD118DB278D738A0033E8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD118D9278D738A0033E8EA /* Main.storyboard */; };
 		EAD118DD278D738B0033E8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD118DC278D738B0033E8EA /* Assets.xcassets */; };
 		EAD118E0278D738B0033E8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD118DE278D738B0033E8EA /* LaunchScreen.storyboard */; };
 		EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */; };
 		EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */; };
 		EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */; };
+		EAE6F715279031E900EA3C8B /* VehicleManufacturorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */; };
+		EAE6F7172790362F00EA3C8B /* ManufacturorDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAD118D0278D738A0033E8EA /* WestCoast-Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WestCoast-Cars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD118D3278D738A0033E8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD118D5278D738A0033E8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAD118D7278D738A0033E8EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAD118DA278D738A0033E8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAD118DC278D738B0033E8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD118DF278D738B0033E8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +30,8 @@
 		EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTableViewCell.swift; sourceTree = "<group>"; };
 		EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeTableViewController.swift; sourceTree = "<group>"; };
 		EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeDetailsViewController.swift; sourceTree = "<group>"; };
+		EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleManufacturorModel.swift; sourceTree = "<group>"; };
+		EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorDiffableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,6 @@
 			children = (
 				EAD118D3278D738A0033E8EA /* AppDelegate.swift */,
 				EAD118D5278D738A0033E8EA /* SceneDelegate.swift */,
-				EAD118D7278D738A0033E8EA /* ViewController.swift */,
 				EAD118D9278D738A0033E8EA /* Main.storyboard */,
 				EAD118DC278D738B0033E8EA /* Assets.xcassets */,
 				EAD118DE278D738B0033E8EA /* LaunchScreen.storyboard */,
@@ -72,6 +73,8 @@
 				EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */,
 				EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */,
 				EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */,
+				EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */,
+				EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */,
 			);
 			path = "WestCoast-Cars";
 			sourceTree = "<group>";
@@ -147,12 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD118D8278D738A0033E8EA /* ViewController.swift in Sources */,
 				EAD118D4278D738A0033E8EA /* AppDelegate.swift in Sources */,
 				EAD118D6278D738A0033E8EA /* SceneDelegate.swift in Sources */,
 				EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */,
 				EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */,
 				EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */,
+				EAE6F7172790362F00EA3C8B /* ManufacturorDiffableDataSource.swift in Sources */,
+				EAE6F715279031E900EA3C8B /* VehicleManufacturorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
