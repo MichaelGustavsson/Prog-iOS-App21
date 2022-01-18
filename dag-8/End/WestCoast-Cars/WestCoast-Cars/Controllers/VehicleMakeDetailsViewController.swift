@@ -7,8 +7,7 @@
 
 import UIKit
 
-class VehicleMakeDetailsViewController: UIViewController {
-
+class VehicleMakeDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var headerView: MakeDetailHeaderView!
     
@@ -17,7 +16,7 @@ class VehicleMakeDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(manufacturor)
+        print(manufacturor!)
 
         // Do any additional setup after loading the view.
         
@@ -26,15 +25,18 @@ class VehicleMakeDetailsViewController: UIViewController {
         headerView.vehiclesInStock.text = "\(manufacturor?.availableVehicles ?? 0)"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return manufacturor?.vehicles.count ?? 0
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "vehicleCell";
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        
+        cell.textLabel?.text = "Bilmodell \(manufacturor?.vehicles[indexPath.row].model ?? "")"
+        cell.detailTextLabel?.text = "Årsmodell \(manufacturor?.vehicles[indexPath.row].modelYear ?? 2015) Antal km \(manufacturor?.vehicles[indexPath.row].mileage ?? 0)"
+        
+        return cell
+        
+    }
 }

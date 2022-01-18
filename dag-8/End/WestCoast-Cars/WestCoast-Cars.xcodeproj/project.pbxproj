@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA037D372796E70F00123409 /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA037D362796E70F00123409 /* VehicleModel.swift */; };
 		EAD118D4278D738A0033E8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118D3278D738A0033E8EA /* AppDelegate.swift */; };
 		EAD118D6278D738A0033E8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118D5278D738A0033E8EA /* SceneDelegate.swift */; };
 		EAD118DB278D738A0033E8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD118D9278D738A0033E8EA /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA037D362796E70F00123409 /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
 		EAD118D0278D738A0033E8EA /* WestCoast-Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WestCoast-Cars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD118D3278D738A0033E8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD118D5278D738A0033E8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */,
 				EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */,
+				EA037D362796E70F00123409 /* VehicleModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */,
 				EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */,
 				EAE6F7172790362F00EA3C8B /* ManufacturorDiffableDataSource.swift in Sources */,
+				EA037D372796E70F00123409 /* VehicleModel.swift in Sources */,
 				EAE6F715279031E900EA3C8B /* VehicleManufacturorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

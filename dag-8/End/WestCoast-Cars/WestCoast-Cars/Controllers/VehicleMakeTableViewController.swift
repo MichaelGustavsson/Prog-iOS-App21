@@ -15,8 +15,15 @@ class VehicleMakeTableViewController: UITableViewController {
     lazy var dataSource = setupDataSource()
         
     var manufacturors: [Manufacturor] = [
-        Manufacturor(manufacturorName: "Ford", image: "ford"),
-        Manufacturor(manufacturorName: "Volvo", image: "volvo", numberOfVehiclesInStock: 4)
+        Manufacturor(manufacturorName: "Ford", image: "ford", vehicles: [
+            Vehicle(regNo: "ABC123", color: "Black", model: "Mustang E", modelYear: 2021, mileage: 100),
+            Vehicle(regNo: "DEF123", color: "Baby blue", model: "Kuga", modelYear: 2011, mileage: 119500)
+        ]),
+        Manufacturor(manufacturorName: "Volvo", image: "volvo", vehicles: [
+            Vehicle(regNo: "GHI123", color: "Gray Metallic", model: "V90", modelYear: 2017, mileage: 89500),
+            Vehicle(regNo: "JKL123", color: "Blue Metallic", model: "V40", modelYear: 2018, mileage: 69500),
+            Vehicle(regNo: "MNO123", color: "White", model: "V60", modelYear: 2019, mileage: 32500)
+        ])
     ]
     
     override func viewDidLoad() {

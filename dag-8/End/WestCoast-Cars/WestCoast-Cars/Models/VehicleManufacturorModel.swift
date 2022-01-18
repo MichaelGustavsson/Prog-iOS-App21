@@ -11,23 +11,12 @@ struct Manufacturor: Hashable {
     var name: String
     var logoImage: String
     var availableVehicles: Int
-
-    //Default Initiering med hjälp av en Initializer...
-    init(){
-        self.name = ""
-        self.logoImage = ""
-        self.availableVehicles = 0
-    }
+    var vehicles: [Vehicle]
     
-    init(manufacturorName: String, image: String){
+    init(manufacturorName: String, image: String, vehicles: [Vehicle]){
         self.name = manufacturorName
         self.logoImage = image
-        self.availableVehicles = 0
-    }
-    
-    init(manufacturorName: String, image: String, numberOfVehiclesInStock: Int){
-        self.name = manufacturorName
-        self.logoImage = image
-        self.availableVehicles = numberOfVehiclesInStock
+        self.availableVehicles = vehicles.count
+        self.vehicles = vehicles
     }
 }
