@@ -218,3 +218,28 @@ print("--Det rekommendare sättet-----------------------------------")
 if let myName = name{
     print(myName)
 }
+
+
+struct Vehicle: Hashable {
+    var regNo: String
+    var make: String
+    var model: String
+    var modelYear: Int
+    
+    init(regNo: String, make: String, model: String, modelYear: Int){
+        self.regNo = regNo
+        self.make = make
+        self.model = model
+        self.modelYear = modelYear
+    }
+}
+
+var cars = Set<Vehicle>()
+
+print(cars.count)
+
+cars.insert(Vehicle(regNo: "abc233", make: "Volvo", model: "V50", modelYear: 2010))
+cars.insert(Vehicle(regNo: "abc233", make: "Volvo", model: "V50", modelYear: 2010))
+cars.insert(Vehicle(regNo: "def345", make: "Volvo", model: "V50", modelYear: 2010))
+print(cars.count)
+
