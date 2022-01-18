@@ -45,6 +45,17 @@ class VehicleMakeDetailsViewController: UIViewController{ //, UITableViewDataSou
         })
         return dataSource
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "showVehicleDetailsSegue"){
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destinationController = segue.destination as! VehicleDetailViewController
+                
+                destinationController.vehicle = manufacturor?.vehicles[indexPath.row]
+            }
+        }
+    }
+    
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return manufacturor?.vehicles.count ?? 0
 //    }

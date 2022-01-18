@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA037D372796E70F00123409 /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA037D362796E70F00123409 /* VehicleModel.swift */; };
 		EA037D392796F8DB00123409 /* VehicleDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA037D382796F8DB00123409 /* VehicleDiffableDataSource.swift */; };
+		EA037D3B279700F900123409 /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA037D3A279700F900123409 /* VehicleDetailViewController.swift */; };
 		EAD118D4278D738A0033E8EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118D3278D738A0033E8EA /* AppDelegate.swift */; };
 		EAD118D6278D738A0033E8EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118D5278D738A0033E8EA /* SceneDelegate.swift */; };
 		EAD118DB278D738A0033E8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD118D9278D738A0033E8EA /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		EA037D362796E70F00123409 /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
 		EA037D382796F8DB00123409 /* VehicleDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDiffableDataSource.swift; sourceTree = "<group>"; };
+		EA037D3A279700F900123409 /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
 		EAD118D0278D738A0033E8EA /* WestCoast-Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WestCoast-Cars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD118D3278D738A0033E8EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD118D5278D738A0033E8EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */,
 				EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */,
+				EA037D3A279700F900123409 /* VehicleDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				EAE6F71D2790617500EA3C8B /* MakeDetailHeaderView.swift in Sources */,
 				EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */,
 				EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */,
+				EA037D3B279700F900123409 /* VehicleDetailViewController.swift in Sources */,
 				EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */,
 				EAE6F7172790362F00EA3C8B /* ManufacturorDiffableDataSource.swift in Sources */,
 				EA037D372796E70F00123409 /* VehicleModel.swift in Sources */,
