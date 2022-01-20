@@ -16,13 +16,13 @@ class VehicleMakeTableViewController: UITableViewController {
         
     var manufacturors: [Manufacturor] = [
         Manufacturor(manufacturorName: "Ford", image: "ford", vehicles: [
-            Vehicle(regNo: "ABC123", color: "Black", model: "Shelby", modelYear: 2021, mileage: 100, vehicleImage: "ford-shelby"),
-            Vehicle(regNo: "DEF123", color: "Brown Gray", model: "Kuga", modelYear: 2011, mileage: 119500, vehicleImage: "ford-kuga")
+            Vehicle(regNo: "ABC123", color: "Black", model: "Shelby", modelYear: 2021, mileage: 100, vehicleImage: "ford-shelby", manufacturor: "Ford"),
+            Vehicle(regNo: "DEF123", color: "Brown Gray", model: "Kuga", modelYear: 2011, mileage: 119500, vehicleImage: "ford-kuga", manufacturor: "Ford")
         ]),
         Manufacturor(manufacturorName: "Volvo", image: "volvo", vehicles: [
-            Vehicle(regNo: "GHI123", color: "Gray Metallic", model: "V90", modelYear: 2017, mileage: 89500, vehicleImage: "volvo-v90"),
-            Vehicle(regNo: "JKL123", color: "White", model: "V40", modelYear: 2018, mileage: 69500, vehicleImage: "volvo-v40"),
-            Vehicle(regNo: "MNO123", color: "Darkblue Metallic", model: "V60", modelYear: 2019, mileage: 32500, vehicleImage: "volvo-v60")
+            Vehicle(regNo: "GHI123", color: "Gray Metallic", model: "V90", modelYear: 2017, mileage: 89500, vehicleImage: "volvo-v90", manufacturor: "Volvo"),
+            Vehicle(regNo: "JKL123", color: "White", model: "V40", modelYear: 2018, mileage: 69500, vehicleImage: "volvo-v40", manufacturor: "Volvo"),
+            Vehicle(regNo: "MNO123", color: "Darkblue Metallic", model: "V60", modelYear: 2019, mileage: 32500, vehicleImage: "volvo-v60", manufacturor: "Volvo")
         ])
     ]
     

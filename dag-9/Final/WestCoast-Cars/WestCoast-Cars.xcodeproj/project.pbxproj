@@ -18,6 +18,8 @@
 		EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */; };
 		EAD118EA278D8E7D0033E8EA /* VehicleMakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */; };
 		EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */; };
+		EADEDEC52799594B00E24749 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEDEC42799594B00E24749 /* BookingViewController.swift */; };
+		EADEDEC72799706100E24749 /* BookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEDEC62799706100E24749 /* BookingModel.swift */; };
 		EAE6F715279031E900EA3C8B /* VehicleManufacturorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */; };
 		EAE6F7172790362F00EA3C8B /* ManufacturorDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */; };
 		EAE6F71D2790617500EA3C8B /* MakeDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE6F71C2790617500EA3C8B /* MakeDetailHeaderView.swift */; };
@@ -37,6 +39,8 @@
 		EAD118E7278D85810033E8EA /* MakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTableViewCell.swift; sourceTree = "<group>"; };
 		EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeTableViewController.swift; sourceTree = "<group>"; };
 		EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeDetailsViewController.swift; sourceTree = "<group>"; };
+		EADEDEC42799594B00E24749 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		EADEDEC62799706100E24749 /* BookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingModel.swift; sourceTree = "<group>"; };
 		EAE6F714279031E900EA3C8B /* VehicleManufacturorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleManufacturorModel.swift; sourceTree = "<group>"; };
 		EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorDiffableDataSource.swift; sourceTree = "<group>"; };
 		EAE6F71C2790617500EA3C8B /* MakeDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDetailHeaderView.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				EAE6F7162790362F00EA3C8B /* ManufacturorDiffableDataSource.swift */,
 				EA037D362796E70F00123409 /* VehicleModel.swift */,
 				EA037D382796F8DB00123409 /* VehicleDiffableDataSource.swift */,
+				EADEDEC62799706100E24749 /* BookingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 				EAD118EB278DCB280033E8EA /* VehicleMakeDetailsViewController.swift */,
 				EAD118E9278D8E7D0033E8EA /* VehicleMakeTableViewController.swift */,
 				EA037D3A279700F900123409 /* VehicleDetailViewController.swift */,
+				EADEDEC42799594B00E24749 /* BookingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 				EAD118D4278D738A0033E8EA /* AppDelegate.swift in Sources */,
 				EAD118D6278D738A0033E8EA /* SceneDelegate.swift in Sources */,
 				EAE6F71D2790617500EA3C8B /* MakeDetailHeaderView.swift in Sources */,
+				EADEDEC72799706100E24749 /* BookingModel.swift in Sources */,
 				EAD118E8278D85810033E8EA /* MakeTableViewCell.swift in Sources */,
 				EAD118EC278DCB280033E8EA /* VehicleMakeDetailsViewController.swift in Sources */,
 				EA037D3B279700F900123409 /* VehicleDetailViewController.swift in Sources */,
@@ -196,6 +203,7 @@
 				EAE6F7172790362F00EA3C8B /* ManufacturorDiffableDataSource.swift in Sources */,
 				EA037D372796E70F00123409 /* VehicleModel.swift in Sources */,
 				EA037D392796F8DB00123409 /* VehicleDiffableDataSource.swift in Sources */,
+				EADEDEC52799594B00E24749 /* BookingViewController.swift in Sources */,
 				EAE6F715279031E900EA3C8B /* VehicleManufacturorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

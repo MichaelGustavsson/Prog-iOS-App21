@@ -15,6 +15,7 @@ struct Vehicle: Hashable {
     var mileage: Int
     var image: String
     var description: String
+    var vehicleName: String
     
     init(regNo: String, color: String, model: String, modelYear: Int, mileage: Int){
         self.registrationNumber = regNo
@@ -24,6 +25,7 @@ struct Vehicle: Hashable {
         self.mileage = mileage
         self.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum. Nunc vel nulla cursus, luctus nunc elementum, suscipit nisi. Aliquam pharetra lorem eu arcu maximus scelerisque. Nulla scelerisque odio elit, a pulvinar lectus blandit ut. Morbi eget tellus massa. Etiam sed velit sed nisl pretium ornare."
         self.image = ""
+        self.vehicleName = ""
     }
     
     init(regNo: String, color: String, model: String, modelYear: Int, mileage: Int, vehicleImage: String){
@@ -34,5 +36,17 @@ struct Vehicle: Hashable {
         self.mileage = mileage
         self.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum. Nunc vel nulla cursus, luctus nunc elementum, suscipit nisi. Aliquam pharetra lorem eu arcu maximus scelerisque. Nulla scelerisque odio elit, a pulvinar lectus blandit ut. Morbi eget tellus massa. Etiam sed velit sed nisl pretium ornare."
         self.image = vehicleImage
+        self.vehicleName = ""
+    }
+    
+    init(regNo: String, color: String, model: String, modelYear: Int, mileage: Int, vehicleImage: String, manufacturor: String){
+        self.registrationNumber = regNo
+        self.color = color
+        self.model = model
+        self.modelYear = modelYear
+        self.mileage = mileage
+        self.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum. Nunc vel nulla cursus, luctus nunc elementum, suscipit nisi. Aliquam pharetra lorem eu arcu maximus scelerisque. Nulla scelerisque odio elit, a pulvinar lectus blandit ut. Morbi eget tellus massa. Etiam sed velit sed nisl pretium ornare."
+        self.image = vehicleImage
+        self.vehicleName = "\(manufacturor) \(model)"
     }
 }
