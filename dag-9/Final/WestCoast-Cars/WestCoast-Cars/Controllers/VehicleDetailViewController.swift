@@ -34,6 +34,13 @@ class VehicleDetailViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    /* Detta är en unwind segue för att ta emot information ifrån vår BookingViewController */
+    @IBAction func receiveInfoFromBooking(segue: UIStoryboardSegue){
+        if let sourceController = segue.source as? BookingViewController {
+            print(sourceController.firstNameInput.text ?? "Nisse")
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "showBookingSegue"){
             let bookingVehicleController = segue.destination as! BookingViewController

@@ -30,7 +30,7 @@ class BookingViewController: UIViewController {
     @IBAction func sendBookingButton(_ sender: UIButton){
         let bookingModel = BookingInfo(firstName: firstNameInput.text!, lastName: lastNameInput.text!, email: emailInput.text!, phone: phoneInput.text!)
         
-        print(bookingModel)
+        //print(bookingModel)
     }
 
 
