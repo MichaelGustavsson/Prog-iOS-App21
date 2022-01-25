@@ -14,7 +14,7 @@ struct WeatherService {
     func fetchWeather(city: String){
         let urlString = "\(weatherUrl)&q=\(city)"
         
-        print(urlString)
+//        print(urlString)
         
         // Hur man kommunicerar med ett REST API ifrån Swift...
         // Steg 1. Skapa en korrekt URL för nätverks kommunikation.
@@ -38,15 +38,38 @@ struct WeatherService {
                 return
             }
             
-            print("Response: \(response!)")
-            print("Data: \(data!)")
+//            print("Response: \(response!)")
+//            print("Data: \(data!)")
             
-            let dataString = String(data: responseData, encoding: .utf8)
+            if let weather = parseJSON(weatherData: responseData){
+                print(weather)
+            }
             
-            print(dataString!)
+//            let dataString = String(data: responseData, encoding: .utf8)
+//
+//            print(dataString!)
         }
         
         // Steg 4. Starta kommunikation(gör anropet)
         task.resume()
+    }
+    
+    func parseJSON(weatherData: Data) -> WeatherModel?{
+        let decoder = JSONDecoder()
+        
+        do {
+            let decodedInfo = try decoder.decode(WeatherJSON.self, from: weatherData)
+            let name = decodedInfo.name
+            let temp = decodedInfo.main.temp
+            let feels_like = decodedInfo.main.feels_like
+            let humidity = decodedInfo.main.humidity
+            
+            let weather = WeatherModel(cityName: name, temperature: temp, feelsLike: feels_like, humidity: humidity)
+            
+            return weather
+        }catch {
+            print(error)
+            return nil
+        }
     }
 }
