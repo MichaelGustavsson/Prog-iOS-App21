@@ -7,15 +7,20 @@
 
 import Foundation
 
+protocol WeatherServiceDelegate {
+    func didUpdateWeather(weather: WeatherModel)
+}
+
 struct WeatherService {
     // Grund url till openweathermap.org
     let weatherUrl = "https://api.openweathermap.org/data/2.5/weather?appid=bd1437c53b15df8bd7e809ef8391d83d&units=metric"
     
+    // Skapa en referens till WeatherServiceDelegate...
+    var delegate: WeatherServiceDelegate?
+    
     func fetchWeather(city: String){
         let urlString = "\(weatherUrl)&q=\(city)"
-        
-//        print(urlString)
-        
+                
         // Hur man kommunicerar med ett REST API ifrån Swift...
         // Steg 1. Skapa en korrekt URL för nätverks kommunikation.
         guard let url = URL(string: urlString) else {
@@ -38,18 +43,11 @@ struct WeatherService {
                 return
             }
             
-//            print("Response: \(response!)")
-//            print("Data: \(data!)")
-            
             if let weather = parseJSON(weatherData: responseData){
-                print(weather)
+                self.delegate?.didUpdateWeather(weather: weather)
             }
-            
-//            let dataString = String(data: responseData, encoding: .utf8)
-//
-//            print(dataString!)
-        }
         
+        }
         // Steg 4. Starta kommunikation(gör anropet)
         task.resume()
     }
@@ -58,13 +56,14 @@ struct WeatherService {
         let decoder = JSONDecoder()
         
         do {
-            let decodedInfo = try decoder.decode(WeatherJSON.self, from: weatherData)
+            let decodedInfo = try decoder.decode(WeatherJSONMapper.self, from: weatherData)
             let name = decodedInfo.name
             let temp = decodedInfo.main.temp
             let feels_like = decodedInfo.main.feels_like
             let humidity = decodedInfo.main.humidity
+            let id = decodedInfo.weather[0].id
             
-            let weather = WeatherModel(cityName: name, temperature: temp, feelsLike: feels_like, humidity: humidity)
+            let weather = WeatherModel(conditionId: id, cityName: name, temperature: temp, feelsLike: feels_like, humidity: humidity)
             
             return weather
         }catch {
