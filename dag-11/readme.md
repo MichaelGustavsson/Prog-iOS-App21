@@ -2,7 +2,7 @@
 
 ### Här är koden för att hämta rätt ikon för väder...
 
-´
+`
 	switch conditionId {
         case 200...232:
             return "cloud.bolt"
@@ -20,5 +20,5 @@
             return "cloud.bolt"
         default:
             return "cloud"
-        }
-´
+    }
+`
