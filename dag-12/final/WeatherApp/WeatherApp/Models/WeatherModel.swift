@@ -25,7 +25,6 @@ struct WeatherModel {
     }
     
     var conditionName: String {
-        print(conditionId)
         switch conditionId {
             case 200...232:
             return "cloud.bolt"

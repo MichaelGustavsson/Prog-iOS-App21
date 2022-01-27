@@ -8,7 +8,8 @@
 import Foundation
 
 protocol WeatherServiceDelegate {
-    func didUpdateWeather(weather: WeatherModel)
+    func didUpdateWeather(_ weatherService: WeatherService, weatherData: WeatherModel)
+    func didFailWithError(error: Error)
 }
 
 struct WeatherService {
@@ -18,24 +19,28 @@ struct WeatherService {
     // Skapa en referens till WeatherServiceDelegate...
     var delegate: WeatherServiceDelegate?
     
-    func fetchWeather(city: String){
+    func fetchWeather(_ city: String){
         let urlString = "\(weatherUrl)&q=\(city)"
-                
-        // Hur man kommunicerar med ett REST API ifrån Swift...
-        // Steg 1. Skapa en korrekt URL för nätverks kommunikation.
+        
+        guard let encodedString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+            return
+        }
+        
+        makeRequest(with: encodedString)
+    }
+    
+    func makeRequest(with urlString: String){
         guard let url = URL(string: urlString) else {
             return
         }
         
-        print(url)
         
-        // Steg 2. Skapa en instans av URLSession klassen/struct.
+        
         let session = URLSession(configuration: .default)
         
-        // Steg 3. Skapa en uppgift/task för vår nyligen skapade instans av URLSession.
         let task = session.dataTask(with: url) { data, response, error in
             if error != nil {
-                print(error!)
+                delegate?.didFailWithError(error: error!)
                 return
             }
             
@@ -43,16 +48,15 @@ struct WeatherService {
                 return
             }
             
-            if let weather = parseJSON(weatherData: responseData){
-                self.delegate?.didUpdateWeather(weather: weather)
+            if let weather = parseJSON(responseData){
+                self.delegate?.didUpdateWeather(self, weatherData: weather)
             }
         
         }
-        // Steg 4. Starta kommunikation(gör anropet)
         task.resume()
     }
     
-    func parseJSON(weatherData: Data) -> WeatherModel?{
+    func parseJSON(_ weatherData: Data) -> WeatherModel?{
         let decoder = JSONDecoder()
         
         do {
@@ -67,7 +71,7 @@ struct WeatherService {
             
             return weather
         }catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }
