@@ -10,5 +10,5 @@ import Foundation
 struct Manufacturor: Decodable {
     let _id: String
     let name: String
-    let logoImage: String
+    let logoImage: String?
 }

@@ -15,6 +15,11 @@
 		EA5406DD27A3E09C004869E4 /* ManufacturorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406DC27A3E09C004869E4 /* ManufacturorsTableViewController.swift */; };
 		EA5406E027A3E81B004869E4 /* ManufacturorListingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406DF27A3E81B004869E4 /* ManufacturorListingMapper.swift */; };
 		EA5406E227A3EEBE004869E4 /* Manufacturor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E127A3EEBE004869E4 /* Manufacturor.swift */; };
+		EA5406E427A3F591004869E4 /* VehiclesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E327A3F591004869E4 /* VehiclesTableViewController.swift */; };
+		EA5406E627A3F731004869E4 /* VehicleListingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */; };
+		EA5406E827A3F7B1004869E4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E727A3F7B1004869E4 /* Vehicle.swift */; };
+		EA5406ED27A4003B004869E4 /* VehiclesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406EC27A4003B004869E4 /* VehiclesService.swift */; };
+		EA5406EF27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406EE27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		EA5406DC27A3E09C004869E4 /* ManufacturorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorsTableViewController.swift; sourceTree = "<group>"; };
 		EA5406DF27A3E81B004869E4 /* ManufacturorListingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorListingMapper.swift; sourceTree = "<group>"; };
 		EA5406E127A3EEBE004869E4 /* Manufacturor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturor.swift; sourceTree = "<group>"; };
+		EA5406E327A3F591004869E4 /* VehiclesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesTableViewController.swift; sourceTree = "<group>"; };
+		EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListingMapper.swift; sourceTree = "<group>"; };
+		EA5406E727A3F7B1004869E4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		EA5406EC27A4003B004869E4 /* VehiclesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesService.swift; sourceTree = "<group>"; };
+		EA5406EE27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturVehiclesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +70,13 @@
 		EA5406C627A3DFB1004869E4 /* westcoast-cars-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				EA5406EB27A40000004869E4 /* Services */,
+				EA5406EA27A3FFF2004869E4 /* Views */,
+				EA5406E927A3FFA9004869E4 /* Helpers */,
 				EA5406DE27A3E7CA004869E4 /* Models */,
 				EA5406DB27A3E077004869E4 /* Controllers */,
 				EA5406C727A3DFB1004869E4 /* AppDelegate.swift */,
 				EA5406C927A3DFB1004869E4 /* SceneDelegate.swift */,
-				EA5406CD27A3DFB1004869E4 /* Main.storyboard */,
 				EA5406D027A3DFB2004869E4 /* Assets.xcassets */,
 				EA5406D227A3DFB2004869E4 /* LaunchScreen.storyboard */,
 				EA5406D527A3DFB2004869E4 /* Info.plist */,
@@ -76,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				EA5406DC27A3E09C004869E4 /* ManufacturorsTableViewController.swift */,
+				EA5406E327A3F591004869E4 /* VehiclesTableViewController.swift */,
+				EA5406EE27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -83,10 +97,35 @@
 		EA5406DE27A3E7CA004869E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EA5406DF27A3E81B004869E4 /* ManufacturorListingMapper.swift */,
 				EA5406E127A3EEBE004869E4 /* Manufacturor.swift */,
+				EA5406E727A3F7B1004869E4 /* Vehicle.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EA5406E927A3FFA9004869E4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */,
+				EA5406DF27A3E81B004869E4 /* ManufacturorListingMapper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA5406EA27A3FFF2004869E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406CD27A3DFB1004869E4 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA5406EB27A40000004869E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406EC27A4003B004869E4 /* VehiclesService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,8 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5406EF27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift in Sources */,
+				EA5406E827A3F7B1004869E4 /* Vehicle.swift in Sources */,
+				EA5406ED27A4003B004869E4 /* VehiclesService.swift in Sources */,
+				EA5406E627A3F731004869E4 /* VehicleListingMapper.swift in Sources */,
 				EA5406E027A3E81B004869E4 /* ManufacturorListingMapper.swift in Sources */,
 				EA5406DD27A3E09C004869E4 /* ManufacturorsTableViewController.swift in Sources */,
+				EA5406E427A3F591004869E4 /* VehiclesTableViewController.swift in Sources */,
 				EA5406C827A3DFB1004869E4 /* AppDelegate.swift in Sources */,
 				EA5406CA27A3DFB1004869E4 /* SceneDelegate.swift in Sources */,
 				EA5406E227A3EEBE004869E4 /* Manufacturor.swift in Sources */,
