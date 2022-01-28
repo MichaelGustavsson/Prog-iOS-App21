@@ -19,7 +19,7 @@
 		EA5406E627A3F731004869E4 /* VehicleListingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */; };
 		EA5406E827A3F7B1004869E4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E727A3F7B1004869E4 /* Vehicle.swift */; };
 		EA5406ED27A4003B004869E4 /* VehiclesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406EC27A4003B004869E4 /* VehiclesService.swift */; };
-		EA5406EF27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406EE27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift */; };
+		EA5406EF27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406EE27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListingMapper.swift; sourceTree = "<group>"; };
 		EA5406E727A3F7B1004869E4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		EA5406EC27A4003B004869E4 /* VehiclesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesService.swift; sourceTree = "<group>"; };
-		EA5406EE27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturVehiclesTableViewController.swift; sourceTree = "<group>"; };
+		EA5406EE27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorVehiclesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			children = (
 				EA5406DC27A3E09C004869E4 /* ManufacturorsTableViewController.swift */,
 				EA5406E327A3F591004869E4 /* VehiclesTableViewController.swift */,
-				EA5406EE27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift */,
+				EA5406EE27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5406EF27A40B65004869E4 /* ManufacturVehiclesTableViewController.swift in Sources */,
+				EA5406EF27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift in Sources */,
 				EA5406E827A3F7B1004869E4 /* Vehicle.swift in Sources */,
 				EA5406ED27A4003B004869E4 /* VehiclesService.swift in Sources */,
 				EA5406E627A3F731004869E4 /* VehicleListingMapper.swift in Sources */,

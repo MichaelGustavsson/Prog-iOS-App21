@@ -75,7 +75,15 @@ class ManufacturorsTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "showManufacturorVehiclesSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+
+                let destinationController = segue.destination as! ManufacturorVehiclesTableViewController
+
+                destinationController.manufacturor = manufacturors[indexPath.row]
+
+            }
+        }
     }
     
 }
