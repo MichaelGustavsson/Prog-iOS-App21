@@ -77,6 +77,7 @@ class VehiclesTableViewController: UITableViewController {
     // Unwind Segue
     @IBAction func closeCreateVehicleDialog(segue: UIStoryboardSegue){
         dismiss(animated: true, completion: nil)
+        self.listVehicles()
     }
 
     /*

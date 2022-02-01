@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="1703.0769230769231" y="858.76777251184831"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Vehicle View Controller-->
         <scene sceneID="7Nh-Fg-9zt">
             <objects>
-                <viewController id="oTn-Oj-CYq" sceneMemberID="viewController">
+                <viewController id="oTn-Oj-CYq" customClass="CreateVehicleViewController" customModule="westcoast_cars_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oSe-Ok-yVV">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,7 +212,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Stäng"/>
                                 <connections>
-                                    <segue destination="Jn0-QF-fnE" kind="unwind" unwindAction="closeCreateVehicleDialogWithSegue:" id="Efp-eA-Le8"/>
+                                    <segue destination="Jn0-QF-fnE" kind="unwind" identifier="backToVehicleList" unwindAction="closeCreateVehicleDialogWithSegue:" id="Efp-eA-Le8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lägg till ny bil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDQ-hM-D59">
@@ -259,7 +259,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ange antla körda km" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vs2-ji-wAA">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ange antal körda km" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vs2-ji-wAA">
                                         <rect key="frame" x="0.0" y="294" width="350" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -271,6 +271,9 @@
                                             <backgroundConfiguration key="background" cornerRadius="25"/>
                                             <color key="baseBackgroundColor" red="0.35488068124799865" green="0.5" blue="0.34999343693183277" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="saveVehicleButton:" destination="oTn-Oj-CYq" eventType="touchUpInside" id="V2v-7b-iGt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -291,6 +294,17 @@
                             <constraint firstItem="iGb-jC-TCc" firstAttribute="trailing" secondItem="ob1-x8-CaE" secondAttribute="trailing" constant="20" id="yUP-3m-j6T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorInput" destination="07D-KU-Adt" id="1hC-O3-SLE"/>
+                        <outlet property="fuelTypeInput" destination="mEH-UW-cn4" id="PkU-qE-6b6"/>
+                        <outlet property="gearTypeInput" destination="oDT-rr-0zc" id="tY4-CB-ohP"/>
+                        <outlet property="manufacturorInput" destination="m0v-r6-Vb7" id="b1S-s0-nIN"/>
+                        <outlet property="mileageInput" destination="vs2-ji-wAA" id="ddf-qn-wa1"/>
+                        <outlet property="modelInput" destination="Fox-Uo-iPr" id="pf1-9S-ULU"/>
+                        <outlet property="modelYearInput" destination="2es-T2-VKV" id="spc-Pe-lnX"/>
+                        <outlet property="regNoInput" destination="pZI-Qw-O8J" id="Nhm-P4-25d"/>
+                        <segue destination="Jn0-QF-fnE" kind="unwind" unwindAction="closeCreateVehicleDialogWithSegue:" id="i6c-JN-7Uq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXg-sn-UjQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Jn0-QF-fnE" userLabel="Exit" sceneMemberID="exit"/>
