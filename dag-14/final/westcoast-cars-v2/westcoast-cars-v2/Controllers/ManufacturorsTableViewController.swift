@@ -50,6 +50,9 @@ class ManufacturorsTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func refreshButton(_ sender: UIBarButtonItem) {
+        listManufacturors()
+    }
     
     // MARK: - Table view data source
 

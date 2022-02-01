@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA20E97827A92A3E004A5852 /* VehicleMakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA20E97727A92A3E004A5852 /* VehicleMakeTableViewCell.swift */; };
+		EA20E97B27A940AD004A5852 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EA20E97A27A940AD004A5852 /* Kingfisher */; };
 		EA5406C827A3DFB1004869E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406C727A3DFB1004869E4 /* AppDelegate.swift */; };
 		EA5406CA27A3DFB1004869E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406C927A3DFB1004869E4 /* SceneDelegate.swift */; };
 		EA5406CF27A3DFB1004869E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5406CD27A3DFB1004869E4 /* Main.storyboard */; };
@@ -23,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA20E97727A92A3E004A5852 /* VehicleMakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeTableViewCell.swift; sourceTree = "<group>"; };
 		EA5406C427A3DFB1004869E4 /* westcoast-cars-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "westcoast-cars-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5406C727A3DFB1004869E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA5406C927A3DFB1004869E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA20E97B27A940AD004A5852 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5406CD27A3DFB1004869E4 /* Main.storyboard */,
+				EA20E97727A92A3E004A5852 /* VehicleMakeTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = "westcoast-cars-v2";
+			packageProductDependencies = (
+				EA20E97A27A940AD004A5852 /* Kingfisher */,
+			);
 			productName = "westcoast-cars-v2";
 			productReference = EA5406C427A3DFB1004869E4 /* westcoast-cars-v2.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +180,9 @@
 				Base,
 			);
 			mainGroup = EA5406BB27A3DFB1004869E4;
+			packageReferences = (
+				EA20E97927A940AD004A5852 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = EA5406C527A3DFB1004869E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,6 +217,7 @@
 				EA5406E027A3E81B004869E4 /* ManufacturorListingMapper.swift in Sources */,
 				EA5406DD27A3E09C004869E4 /* ManufacturorsTableViewController.swift in Sources */,
 				EA5406E427A3F591004869E4 /* VehiclesTableViewController.swift in Sources */,
+				EA20E97827A92A3E004A5852 /* VehicleMakeTableViewCell.swift in Sources */,
 				EA5406C827A3DFB1004869E4 /* AppDelegate.swift in Sources */,
 				EA5406CA27A3DFB1004869E4 /* SceneDelegate.swift in Sources */,
 				EA5406E227A3EEBE004869E4 /* Manufacturor.swift in Sources */,
@@ -428,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA20E97927A940AD004A5852 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA20E97A27A940AD004A5852 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA20E97927A940AD004A5852 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA5406BC27A3DFB1004869E4 /* Project object */;
 }

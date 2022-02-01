@@ -73,6 +73,11 @@ class VehiclesTableViewController: UITableViewController {
 
         return cell
     }
+    
+    // Unwind Segue
+    @IBAction func closeCreateVehicleDialog(segue: UIStoryboardSegue){
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

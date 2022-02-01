@@ -14,6 +14,7 @@ struct Vehicle: Decodable {
     let color: String
     let modelYear: Int
     let mileage: Int
+    let imageUrl: String?
     let manufacturor: Manufacturor
     
 }
