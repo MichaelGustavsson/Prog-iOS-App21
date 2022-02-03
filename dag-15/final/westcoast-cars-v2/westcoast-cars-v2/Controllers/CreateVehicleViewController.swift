@@ -170,9 +170,10 @@ extension CreateVehicleViewController {
                 request.httpMethod = "POST"
                 request.setValue("application/json", forHTTPHeaderField: "Accept")
                 request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-                
+                                
                 let vehicleJson = try JSONEncoder().encode(vehicle)
                 
+                // HTTP måste ha ett data innehåll. HTTP pakets body
                 request.httpBody = vehicleJson
                 
                 URLSession.shared.dataTask(with: request){(data, response, error) in
