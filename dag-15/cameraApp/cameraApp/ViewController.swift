@@ -36,7 +36,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let imagePicker = UIImagePickerController()
             
             imagePicker.delegate = self
-            imagePicker.allowsEditing = false
+            imagePicker.allowsEditing = true
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
@@ -57,6 +57,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
     }
     
+    
+    @IBAction func uploadPicture(_ sender: UIButton) {
+        
+//        guard let imageData = imageViewer.image?.jpegData(compressionQuality: .75) else{
+//            return
+//        }
+//
+//        guard let image = UIImage(data: imageData) else {
+//            return
+//        }
+//
+//        let data = imageData.base64EncodedData()
+        
+        // 1. POST till ett rest api multiform
+        // 2. Blob storage (AWS, Azure, GCP ....)
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         print("Färdig")
         
@@ -64,7 +81,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         imageViewer.image = image
         
-        print("Bild storlek \(image.size) URL till bilden \(info[.imageURL]!)")
+        print("Bild storlek \(image.size))")
         
         dismiss(animated: true, completion: nil)
     }
