@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA20E97827A92A3E004A5852 /* VehicleMakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA20E97727A92A3E004A5852 /* VehicleMakeTableViewCell.swift */; };
+		EA20E97B27A940AD004A5852 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EA20E97A27A940AD004A5852 /* Kingfisher */; };
+		EA20E97D27A958C1004A5852 /* CreateVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA20E97C27A958C1004A5852 /* CreateVehicleViewController.swift */; };
+		EA20E97F27A96D04004A5852 /* CreateVehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA20E97E27A96D04004A5852 /* CreateVehicleModel.swift */; };
+		EA5406C827A3DFB1004869E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406C727A3DFB1004869E4 /* AppDelegate.swift */; };
+		EA5406CA27A3DFB1004869E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406C927A3DFB1004869E4 /* SceneDelegate.swift */; };
+		EA5406CF27A3DFB1004869E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5406CD27A3DFB1004869E4 /* Main.storyboard */; };
+		EA5406D127A3DFB2004869E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5406D027A3DFB2004869E4 /* Assets.xcassets */; };
+		EA5406D427A3DFB2004869E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA5406D227A3DFB2004869E4 /* LaunchScreen.storyboard */; };
+		EA5406DD27A3E09C004869E4 /* ManufacturorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406DC27A3E09C004869E4 /* ManufacturorsTableViewController.swift */; };
+		EA5406E027A3E81B004869E4 /* ManufacturorListingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406DF27A3E81B004869E4 /* ManufacturorListingMapper.swift */; };
+		EA5406E227A3EEBE004869E4 /* Manufacturor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E127A3EEBE004869E4 /* Manufacturor.swift */; };
+		EA5406E427A3F591004869E4 /* VehiclesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E327A3F591004869E4 /* VehiclesTableViewController.swift */; };
+		EA5406E627A3F731004869E4 /* VehicleListingMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */; };
+		EA5406E827A3F7B1004869E4 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406E727A3F7B1004869E4 /* Vehicle.swift */; };
+		EA5406ED27A4003B004869E4 /* VehiclesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406EC27A4003B004869E4 /* VehiclesService.swift */; };
+		EA5406EF27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5406EE27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA20E97727A92A3E004A5852 /* VehicleMakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakeTableViewCell.swift; sourceTree = "<group>"; };
+		EA20E97C27A958C1004A5852 /* CreateVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleViewController.swift; sourceTree = "<group>"; };
+		EA20E97E27A96D04004A5852 /* CreateVehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateVehicleModel.swift; sourceTree = "<group>"; };
+		EA5406C427A3DFB1004869E4 /* westcoast-cars-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "westcoast-cars-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5406C727A3DFB1004869E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA5406C927A3DFB1004869E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA5406CE27A3DFB1004869E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA5406D027A3DFB2004869E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA5406D327A3DFB2004869E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA5406D527A3DFB2004869E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5406DC27A3E09C004869E4 /* ManufacturorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorsTableViewController.swift; sourceTree = "<group>"; };
+		EA5406DF27A3E81B004869E4 /* ManufacturorListingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorListingMapper.swift; sourceTree = "<group>"; };
+		EA5406E127A3EEBE004869E4 /* Manufacturor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturor.swift; sourceTree = "<group>"; };
+		EA5406E327A3F591004869E4 /* VehiclesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesTableViewController.swift; sourceTree = "<group>"; };
+		EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListingMapper.swift; sourceTree = "<group>"; };
+		EA5406E727A3F7B1004869E4 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		EA5406EC27A4003B004869E4 /* VehiclesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesService.swift; sourceTree = "<group>"; };
+		EA5406EE27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturorVehiclesTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5406C127A3DFB1004869E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA20E97B27A940AD004A5852 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA5406BB27A3DFB1004869E4 = {
+			isa = PBXGroup;
+			children = (
+				EA5406C627A3DFB1004869E4 /* westcoast-cars-v2 */,
+				EA5406C527A3DFB1004869E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA5406C527A3DFB1004869E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406C427A3DFB1004869E4 /* westcoast-cars-v2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5406C627A3DFB1004869E4 /* westcoast-cars-v2 */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406EB27A40000004869E4 /* Services */,
+				EA5406EA27A3FFF2004869E4 /* Views */,
+				EA5406E927A3FFA9004869E4 /* Helpers */,
+				EA5406DE27A3E7CA004869E4 /* Models */,
+				EA5406DB27A3E077004869E4 /* Controllers */,
+				EA5406C727A3DFB1004869E4 /* AppDelegate.swift */,
+				EA5406C927A3DFB1004869E4 /* SceneDelegate.swift */,
+				EA5406D027A3DFB2004869E4 /* Assets.xcassets */,
+				EA5406D227A3DFB2004869E4 /* LaunchScreen.storyboard */,
+				EA5406D527A3DFB2004869E4 /* Info.plist */,
+			);
+			path = "westcoast-cars-v2";
+			sourceTree = "<group>";
+		};
+		EA5406DB27A3E077004869E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406DC27A3E09C004869E4 /* ManufacturorsTableViewController.swift */,
+				EA5406E327A3F591004869E4 /* VehiclesTableViewController.swift */,
+				EA5406EE27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift */,
+				EA20E97C27A958C1004A5852 /* CreateVehicleViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA5406DE27A3E7CA004869E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406E127A3EEBE004869E4 /* Manufacturor.swift */,
+				EA5406E727A3F7B1004869E4 /* Vehicle.swift */,
+				EA20E97E27A96D04004A5852 /* CreateVehicleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA5406E927A3FFA9004869E4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406E527A3F731004869E4 /* VehicleListingMapper.swift */,
+				EA5406DF27A3E81B004869E4 /* ManufacturorListingMapper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EA5406EA27A3FFF2004869E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406CD27A3DFB1004869E4 /* Main.storyboard */,
+				EA20E97727A92A3E004A5852 /* VehicleMakeTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA5406EB27A40000004869E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA5406EC27A4003B004869E4 /* VehiclesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA5406C327A3DFB1004869E4 /* westcoast-cars-v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5406D827A3DFB2004869E4 /* Build configuration list for PBXNativeTarget "westcoast-cars-v2" */;
+			buildPhases = (
+				EA5406C027A3DFB1004869E4 /* Sources */,
+				EA5406C127A3DFB1004869E4 /* Frameworks */,
+				EA5406C227A3DFB1004869E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "westcoast-cars-v2";
+			packageProductDependencies = (
+				EA20E97A27A940AD004A5852 /* Kingfisher */,
+			);
+			productName = "westcoast-cars-v2";
+			productReference = EA5406C427A3DFB1004869E4 /* westcoast-cars-v2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA5406BC27A3DFB1004869E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					EA5406C327A3DFB1004869E4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = EA5406BF27A3DFB1004869E4 /* Build configuration list for PBXProject "westcoast-cars-v2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA5406BB27A3DFB1004869E4;
+			packageReferences = (
+				EA20E97927A940AD004A5852 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = EA5406C527A3DFB1004869E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA5406C327A3DFB1004869E4 /* westcoast-cars-v2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA5406C227A3DFB1004869E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5406D427A3DFB2004869E4 /* LaunchScreen.storyboard in Resources */,
+				EA5406D127A3DFB2004869E4 /* Assets.xcassets in Resources */,
+				EA5406CF27A3DFB1004869E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA5406C027A3DFB1004869E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5406EF27A40B65004869E4 /* ManufacturorVehiclesTableViewController.swift in Sources */,
+				EA5406E827A3F7B1004869E4 /* Vehicle.swift in Sources */,
+				EA20E97F27A96D04004A5852 /* CreateVehicleModel.swift in Sources */,
+				EA5406ED27A4003B004869E4 /* VehiclesService.swift in Sources */,
+				EA5406E627A3F731004869E4 /* VehicleListingMapper.swift in Sources */,
+				EA5406E027A3E81B004869E4 /* ManufacturorListingMapper.swift in Sources */,
+				EA20E97D27A958C1004A5852 /* CreateVehicleViewController.swift in Sources */,
+				EA5406DD27A3E09C004869E4 /* ManufacturorsTableViewController.swift in Sources */,
+				EA5406E427A3F591004869E4 /* VehiclesTableViewController.swift in Sources */,
+				EA20E97827A92A3E004A5852 /* VehicleMakeTableViewCell.swift in Sources */,
+				EA5406C827A3DFB1004869E4 /* AppDelegate.swift in Sources */,
+				EA5406CA27A3DFB1004869E4 /* SceneDelegate.swift in Sources */,
+				EA5406E227A3EEBE004869E4 /* Manufacturor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA5406CD27A3DFB1004869E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5406CE27A3DFB1004869E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA5406D227A3DFB2004869E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5406D327A3DFB2004869E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA5406D627A3DFB2004869E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA5406D727A3DFB2004869E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA5406D927A3DFB2004869E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3SJT459K8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "westcoast-cars-v2/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.softtech-dev.westcoast-cars-v2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA5406DA27A3DFB2004869E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3SJT459K8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "westcoast-cars-v2/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.softtech-dev.westcoast-cars-v2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA5406BF27A3DFB1004869E4 /* Build configuration list for PBXProject "westcoast-cars-v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5406D627A3DFB2004869E4 /* Debug */,
+				EA5406D727A3DFB2004869E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5406D827A3DFB2004869E4 /* Build configuration list for PBXNativeTarget "westcoast-cars-v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5406D927A3DFB2004869E4 /* Debug */,
+				EA5406DA27A3DFB2004869E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA20E97927A940AD004A5852 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA20E97A27A940AD004A5852 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA20E97927A940AD004A5852 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EA5406BC27A3DFB1004869E4 /* Project object */;
+}
