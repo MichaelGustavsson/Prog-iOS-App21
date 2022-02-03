@@ -1,17 +1,19 @@
 //
 //  ViewController.swift
-//  tableViewWithSections
+//  SimpleScanner
 //
 //  Created by Michael Gustavsson on 2022-02-03.
 //
 
 import UIKit
 
-class ViewController: UITableViewController {
-    
+class ViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
+
 
 }
 

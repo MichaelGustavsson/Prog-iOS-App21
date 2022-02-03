@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min QR Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNM-vn-bhi">
+                                <rect key="frame" x="0.0" y="84" width="414" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faa-cG-KmN">
+                                <rect key="frame" x="131.5" y="400" width="151" height="96"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="68"/>
+                                    </preferredSymbolConfiguration>
+                                    <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="xMf-cz-WqN" kind="presentation" modalPresentationStyle="fullScreen" id="LPT-A5-55A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.046183433529999998" green="0.12013949290000001" blue="0.77180106729999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="QNM-vn-bhi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7fL-qr-38r"/>
+                            <constraint firstItem="QNM-vn-bhi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ua-g4-7RB"/>
+                            <constraint firstItem="QNM-vn-bhi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="gS0-3h-mhp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QNM-vn-bhi" secondAttribute="trailing" id="lCc-c2-1un"/>
+                            <constraint firstItem="faa-cG-KmN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rOx-Uo-wBx"/>
+                            <constraint firstItem="faa-cG-KmN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uK9-Ym-Emr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="92"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="dnJ-6Y-pHz">
+            <objects>
+                <viewController id="xMf-cz-WqN" customClass="ScannerViewController" customModule="SimpleScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TwW-1A-I8u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRv-cb-9dI">
+                                <rect key="frame" x="186.5" y="54" width="41" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kunde inte hitta någon QR kod" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dps-Ce-tet">
+                                <rect key="frame" x="88.5" y="841" width="237" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hmv-SF-IQJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LRv-cb-9dI" firstAttribute="centerX" secondItem="TwW-1A-I8u" secondAttribute="centerX" id="GtS-F2-18a"/>
+                            <constraint firstItem="Dps-Ce-tet" firstAttribute="centerX" secondItem="TwW-1A-I8u" secondAttribute="centerX" id="TeP-5S-fOk"/>
+                            <constraint firstItem="Dps-Ce-tet" firstAttribute="bottom" secondItem="hmv-SF-IQJ" secondAttribute="bottom" id="gVF-Q4-xok"/>
+                            <constraint firstItem="LRv-cb-9dI" firstAttribute="top" secondItem="hmv-SF-IQJ" secondAttribute="top" constant="10" id="j3o-Sx-blJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Dps-Ce-tet" id="RRm-kb-cDU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jqw-NO-BHQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
